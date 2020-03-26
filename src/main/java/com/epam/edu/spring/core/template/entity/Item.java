@@ -1,5 +1,8 @@
 package com.epam.edu.spring.core.template.entity;
 
+import org.springframework.stereotype.Component;
+
+
 public class Item {
 
     private long id;
@@ -13,6 +16,11 @@ public class Item {
         this.price = price;
         this.color = color;
     }
+
+    public Item() {
+
+    }
+
 
     public long getId() {
         return id;

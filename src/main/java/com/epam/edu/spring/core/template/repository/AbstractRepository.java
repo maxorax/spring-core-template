@@ -1,5 +1,8 @@
 package com.epam.edu.spring.core.template.repository;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.util.List;
 
 /**
@@ -7,6 +10,7 @@ import java.util.List;
  * ID сущности генерируется, исходя из initialSequence
  * @param <T>
  */
+@Component
 public abstract class AbstractRepository<T> {
 
     protected long initialSequence = 0;
