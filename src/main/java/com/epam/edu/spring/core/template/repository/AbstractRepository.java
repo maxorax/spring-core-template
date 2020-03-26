@@ -10,7 +10,6 @@ import java.util.List;
  * ID сущности генерируется, исходя из initialSequence
  * @param <T>
  */
-@Component
 public abstract class AbstractRepository<T> {
 
     protected long initialSequence = 0;
